@@ -8,10 +8,8 @@ export const Container = styled.header`
   border-bottom: 1px solid var(--gray-500);
 `
 
-export const Content = styled.header`
-  display: flex;
-  align-items: center;
-  justify-content: start;
+export const Content = styled.div`
+  text-align: start;
 
   p {
     font-size: 2rem;
