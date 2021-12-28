@@ -4,10 +4,12 @@ export const Container = styled.div`
   position: relative;
 
   max-height: 21.25rem;
+  max-width: 14.31rem;
+  box-shadow: var(--black) 0px 10px 38px, var(--black) 0px 15px 12px;
 
   img {
-    width: 14.31rem;
-    height: 21.25rem;
+    width: 100%;
+    height: 100%;
   }
 `
 

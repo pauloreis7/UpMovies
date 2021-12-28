@@ -1,25 +1,29 @@
 import { FiStar, FiClock } from 'react-icons/fi'
 
+import { CardProps } from '../../types/CardProps'
+
 import { Container, CardDetails } from './styles'
 
-export function MovieCard() {
+export function MovieCard({ 
+    title, 
+    poster, 
+    rating, 
+    runtime 
+  }: CardProps) {
   return (
     <Container>
-      <img 
-        src="https://images.unsplash.com/photo-1559570278-eb8d71d06403?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=326&q=80" 
-        alt="desc" 
-      />
+      <img src={poster} alt={title} />
 
       <CardDetails>
-        <span>Movie name</span>
+        <span>{title}</span>
 
         <div>
           <div>
-            <FiStar /> Stars
+            <FiStar /> {rating}
           </div>
 
           <div>
-            <FiClock /> Duration
+            <FiClock /> {runtime}
           </div>
         </div>
       </CardDetails>
