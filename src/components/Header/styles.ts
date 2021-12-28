@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 export const Container = styled.header`
   width: 100%;
@@ -8,7 +9,7 @@ export const Container = styled.header`
   border-bottom: 1px solid var(--gray-500);
 `
 
-export const Content = styled.div`
+export const Content = styled(motion.div)`
   text-align: start;
 
   p {

@@ -2,6 +2,7 @@ import { FiStar, FiClock } from 'react-icons/fi'
 
 import { CardProps } from '../../types/CardProps'
 
+import { cardHover } from '../../animations/GlobalAnimations'
 import { Container, CardDetails } from './styles'
 
 export function MovieCard({ 
@@ -12,7 +13,10 @@ export function MovieCard({
     toggleMovieInfo
   }: CardProps) {
   return (
-    <Container onClick={() => toggleMovieInfo('ex-123')}>
+    <Container 
+      whileHover={cardHover}
+      onClick={() => toggleMovieInfo('ex-123')}
+    >
       <img src={poster} alt={title} />
 
       <CardDetails>

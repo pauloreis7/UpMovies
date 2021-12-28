@@ -1,23 +1,29 @@
-import styled, { css } from "styled-components"
+import styled from "styled-components"
+import { motion } from "framer-motion"
+
+import { size } from '../../styles/responsive'
 
 interface ContainerProps {
   bgImage: string
 }
 
-export const Container = styled.article`
+export const Container = styled(motion.article)`
   width: 100%;
-  height: 32rem;
+  min-height: 32rem;
 
   background: black;
 
   display: flex;
   justify-content: center;
+
+  @media (max-width: ${size.tablet}) { 
+    flex-direction: column;
+  }
 `
 
 export const Content = styled.div<ContainerProps>`
   width: 55%;
-  height: 100%;
-  min-width: 600px;
+  min-width: 40%;
 
   padding: 3rem;
   text-align: left;
@@ -64,6 +70,12 @@ export const Content = styled.div<ContainerProps>`
 
   p {
     font-size: 1.05rem;
+
+    max-width: 50rem;
+  }
+
+  @media (max-width: ${size.tablet}) { 
+    width: 100%;
   }
 `
 

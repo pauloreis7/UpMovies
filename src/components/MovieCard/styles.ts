@@ -1,13 +1,21 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 import { device } from '../../styles/responsive'
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   position: relative;
 
   max-height: 21.25rem;
   max-width: 14.31rem;
+
   box-shadow: var(--black) 0px 10px 38px, var(--black) 0px 15px 12px;
+  cursor: pointer;
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.8)
+  }
 
   img {
     width: 100%;
