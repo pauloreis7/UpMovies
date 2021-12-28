@@ -1,6 +1,6 @@
-import { MovieCard } from '../../components/MovieCard'
+import { CardList } from '../../components/CardList'
 
-import { Container, Content, CardList } from './styles'
+import { Container, Content } from './styles'
 
 export function Home() {
   return (
@@ -8,11 +8,7 @@ export function Home() {
       <Content>
         <h1>Section title</h1>
 
-        <CardList>
-          <MovieCard />
-          
-          <MovieCard />
-        </CardList>
+        <CardList />
       </Content>
     </Container>
   )

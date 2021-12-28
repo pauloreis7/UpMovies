@@ -9,7 +9,7 @@ export const Container = styled.main`
   align-items: center;
 `
 
-export const Content = styled.section`
+export const Content = styled.div`
   width: 100%;
   padding: 2rem 3rem 3rem;
 
@@ -21,13 +21,4 @@ export const Content = styled.section`
     color: var(--blue-500);
     font-size: 2rem;
   }
-`
-
-export const CardList = styled.div`
-  max-width: 1120px;
-  margin: 0 auto;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 `

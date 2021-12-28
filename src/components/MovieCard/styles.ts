@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Card = styled.div`
+export const Container = styled.div`
   position: relative;
 
   max-height: 21.25rem;
