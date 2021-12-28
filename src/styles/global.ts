@@ -3,16 +3,18 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyle = createGlobalStyle`
   :root {
     --white: #FFFFFF;
+    --black: #1f22294d;
 
     --gray-100: #F3F5F6;
     --gray-200: #DCE2E6;
+    --gray-400: #cbcbd1;
     --gray-500: #617480;
     --gray-600: #737380;
     --gray-700: #5D5D6D;
     --gray-900: #123952;
 
-    --blue-500: #115D8C;
-    --orange-500: #F25D27;
+    --blue-500: #398fd3;
+    --yellow-500: #FAE800;
     --red-500: #DE3838;
     --green-500: #51B853;
   }
@@ -45,7 +47,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6, strong {
-    font-weight: 700;
+    font-weight: 200;
   }
 
   button {

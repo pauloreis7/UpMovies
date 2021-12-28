@@ -1,6 +1,6 @@
 import { FiStar, FiClock } from 'react-icons/fi'
 
-import { Container, Content, Card } from './styles'
+import { Container, Content, CardList, Card, CardDetails } from './styles'
 
 export function Home() {
   return (
@@ -8,21 +8,28 @@ export function Home() {
       <Content>
         <h1>Section title</h1>
 
-        <Card>
-          <div>
-            <span>Movie name</span>
+        <CardList>
+          <Card>
+            <img 
+              src="" 
+              alt="desc" 
+            />
 
-            <div>
-              <div>
-                <FiStar /> Start
-              </div>
+            <CardDetails>
+              <span>Movie name</span>
 
               <div>
-                <FiClock /> Duration
+                <div>
+                  <FiStar /> Start
+                </div>
+
+                <div>
+                  <FiClock /> Duration
+                </div>
               </div>
-            </div>
-          </div>
-        </Card>
+            </CardDetails>
+          </Card>
+        </CardList>
       </Content>
     </Container>
   )
