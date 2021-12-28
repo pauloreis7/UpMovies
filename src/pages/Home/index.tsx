@@ -43,16 +43,6 @@ export function Home() {
         sectionTitle='Em Cartaz'
         movies={ex}
       />
-
-      <CardList
-        sectionTitle='Em Cartaz'
-        movies={ex}
-      />
-
-      <CardList
-        sectionTitle='Em Cartaz'
-        movies={ex}
-      />
     </Container>
   )
 }

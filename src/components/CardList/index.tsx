@@ -1,6 +1,7 @@
 import { CardProps } from '../../types/CardProps'
 
 import { MovieCard } from '../MovieCard'
+import { MovieInfo } from '../MovieInfo'
 
 import { Container, Content } from './styles'
 
@@ -30,6 +31,8 @@ export function CardList({
           ))
         }
       </Content>
+
+      <MovieInfo />
       
     </Container>
   )

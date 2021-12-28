@@ -10,7 +10,7 @@ export const Container = styled.section<ContainerProps>`
   width: 100%;
 
   margin-bottom: 1rem;
-  padding: 2rem 3rem 4rem;
+  padding-top: 2rem;
 
   ${props => 
     props.isRelease && 
@@ -21,6 +21,7 @@ export const Container = styled.section<ContainerProps>`
 
   h1 {
     margin-bottom: 1.5rem;
+    padding-left: 3rem;
     color: var(--red-500);
     font-size: 2rem;
 
@@ -36,9 +37,10 @@ export const Container = styled.section<ContainerProps>`
 
 export const Content = styled.div`
   width: 100%;
-  max-width: 1420px;
+  max-width: 1680px;
   
   margin: 0 auto;
+  padding: 0 3rem 4rem;
 
   display: grid;
   gap: 3rem;
