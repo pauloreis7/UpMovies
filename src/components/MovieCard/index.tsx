@@ -5,30 +5,29 @@ import { CardProps } from '../../types/CardProps'
 import { cardHover } from '../../animations/GlobalAnimations'
 import { Container, CardDetails } from './styles'
 
-export function MovieCard({ 
-    title, 
-    poster, 
-    rating, 
-    runtime,
-    toggleMovieInfo
-  }: CardProps) {
+interface MovieCardProps {
+  cardProps: CardProps
+  toggleMovieInfo: (movieId: string) => void
+}
+
+export function MovieCard({cardProps, toggleMovieInfo}: MovieCardProps) {
   return (
     <Container 
       whileHover={cardHover}
       onClick={() => toggleMovieInfo('ex-123')}
     >
-      <img src={poster} alt={title} />
+      <img src={cardProps.poster} alt={cardProps.title} />
 
       <CardDetails>
-        <span>{title}</span>
+        <span>{cardProps.title}</span>
 
         <div>
           <div>
-            <FiStar /> {rating}
+            <FiStar /> {cardProps.rating}
           </div>
 
           <div>
-            <FiClock /> {runtime}
+            <FiClock /> {cardProps.runtime}
           </div>
         </div>
       </CardDetails>
