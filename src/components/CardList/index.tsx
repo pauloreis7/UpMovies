@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import { CardProps } from '../../types/CardProps'
 
 import { MovieCard } from '../MovieCard'
@@ -16,6 +18,17 @@ export function CardList({
     sectionTitle,
     movies 
   }: CardListProps) {
+  const [movieInfoId, setMovieInfoId] = useState('')
+
+  function handleShowMovieInfo(movieId: string) {
+    if(movieInfoId === movieId) {
+      setMovieInfoId('')
+      return
+    }
+
+    setMovieInfoId('ex-123')
+  }
+
   return (
     <Container isRelease={isRelease}>
       <h1>{sectionTitle}</h1>
@@ -27,13 +40,13 @@ export function CardList({
               poster={movie.poster}
               rating={movie.rating}
               runtime={movie.runtime}
+              toggleMovieInfo={handleShowMovieInfo}
             />
           ))
         }
       </Content>
 
-      <MovieInfo />
-      
+      {movieInfoId && <MovieInfo />}
     </Container>
   )
 }

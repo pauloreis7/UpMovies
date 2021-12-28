@@ -8,10 +8,11 @@ export function MovieCard({
     title, 
     poster, 
     rating, 
-    runtime 
+    runtime,
+    toggleMovieInfo
   }: CardProps) {
   return (
-    <Container>
+    <Container onClick={() => toggleMovieInfo('ex-123')}>
       <img src={poster} alt={title} />
 
       <CardDetails>

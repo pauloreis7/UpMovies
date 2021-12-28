@@ -3,4 +3,5 @@ export type CardProps = {
   poster: string
   rating: string
   runtime: string
+  toggleMovieInfo: (movieId: string) => void
 } 

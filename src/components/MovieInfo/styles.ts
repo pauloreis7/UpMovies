@@ -1,5 +1,9 @@
 import styled, { css } from "styled-components"
 
+interface ContainerProps {
+  bgImage: string
+}
+
 export const Container = styled.article`
   width: 100%;
   height: 32rem;
@@ -10,7 +14,7 @@ export const Container = styled.article`
   justify-content: center;
 `
 
-export const Content = styled.div`
+export const Content = styled.div<ContainerProps>`
   width: 55%;
   height: 100%;
   min-width: 600px;
@@ -20,7 +24,7 @@ export const Content = styled.div`
 
   color: var(--gray-100);
 
-  background-image: url("https://images.unsplash.com/photo-1595769816263-9b910be24d5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=879&q=80");
+  background-image: url(${props => props.bgImage});
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
