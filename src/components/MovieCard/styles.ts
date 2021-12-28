@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { device } from '../../styles/responsive'
+
 export const Container = styled.div`
   position: relative;
 
@@ -10,6 +12,11 @@ export const Container = styled.div`
   img {
     width: 100%;
     height: 100%;
+  }
+
+  @media ${device.mobileM} { 
+    max-height: 28rem;
+    max-width: 21rem;
   }
 `
 

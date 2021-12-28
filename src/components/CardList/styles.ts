@@ -1,11 +1,14 @@
 import styled, { css } from "styled-components"
 
+import { device } from '../../styles/responsive'
+
 interface ContainerProps {
   isRelease: boolean
 }
 
 export const Container = styled.section<ContainerProps>`
   width: 100%;
+
   margin-bottom: 1rem;
   padding: 2rem 3rem 4rem;
 
@@ -32,9 +35,31 @@ export const Container = styled.section<ContainerProps>`
 `
 
 export const Content = styled.div`
+  width: 100%;
   max-width: 1420px;
+  
+  margin: 0 auto;
 
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
   gap: 3rem;
+
+  @media ${device.mobileM} { 
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media ${device.mobileL} { 
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media ${device.tablet} { 
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media ${device.laptop} { 
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media ${device.laptopL} { 
+    grid-template-columns: repeat(5, 1fr);
+  }
 `
