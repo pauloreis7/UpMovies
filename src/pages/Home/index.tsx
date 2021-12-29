@@ -2,48 +2,61 @@ import { CardList } from '../../components/CardList'
 
 import { Container } from './styles'
 
-const ex = [
+const cardLists = [
   {
-    title: "Cadeiras",
-    poster: "https://images.unsplash.com/photo-1559570278-eb8d71d06403?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=326&q=80",
-    rating: "6",
-    runtime: "120min",
+    isRelease: true,
+    sectionTitle: 'Em Cartaz'
   },
+
   {
-    title: "Cadeiras",
-    poster: "https://images.unsplash.com/photo-1559570278-eb8d71d06403?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=326&q=80",
-    rating: "6",
-    runtime: "120min",
+    sectionTitle: 'Julho/2021',
+    gte: '2021-07-01',
+    lte: '2021-08-01',
   },
+
   {
-    title: "Cadeiras",
-    poster: "https://images.unsplash.com/photo-1559570278-eb8d71d06403?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=326&q=80",
-    rating: "6",
-    runtime: "120min",
+    sectionTitle: 'Agosto/2021',
+    gte: '2021-08-01',
+    lte: '2021-09-01'
   },
+
   {
-    title: "Cadeiras",
-    poster: "https://images.unsplash.com/photo-1559570278-eb8d71d06403?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=326&q=80",
-    rating: "6",
-    runtime: "120min",
+    sectionTitle: 'Setembro/2021',
+    gte: '2021-09-01',
+    lte: '2021-10-01'
   },
+
   {
-    title: "Cadeiras",
-    poster: "https://images.unsplash.com/photo-1559570278-eb8d71d06403?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=326&q=80",
-    rating: "6",
-    runtime: "120min",
+    sectionTitle: 'Outubro/2021',
+    gte: '2021-10-01',
+    lte: '2021-11-01'
   },
+
+  {
+    sectionTitle: 'Novembro/2021',
+    gte: '2021-11-01',
+    lte: '2021-12-01'
+  },
+
+  {
+    sectionTitle: 'Dezembro/2021',
+    gte: '2021-12-01',
+    lte: '2022-01-01'
+  }
 ]
 
 export function Home() {
   return (
     <Container>
-      <CardList
-        isRelease
-        sectionTitle='Em Cartaz'
-        movies={ex}
-      />
+      {cardLists.map(cardListItem => (
+        <CardList
+          key={cardListItem.sectionTitle}
+          isRelease={cardListItem.isRelease}
+          sectionTitle={cardListItem.sectionTitle}
+          gte={cardListItem.gte}
+          lte={cardListItem.lte}
+        />
+      ))}
     </Container>
   )
 }
-

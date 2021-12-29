@@ -7,14 +7,14 @@ import { Container, CardDetails } from './styles'
 
 interface MovieCardProps {
   cardProps: CardProps
-  toggleMovieInfo: (movieId: string) => void
+  toggleMovieInfo: (movieId: number) => void
 }
 
 export function MovieCard({cardProps, toggleMovieInfo}: MovieCardProps) {
   return (
     <Container 
       whileHover={cardHover}
-      onClick={() => toggleMovieInfo('ex-123')}
+      onClick={() => toggleMovieInfo(cardProps.id)}
     >
       <img src={cardProps.poster} alt={cardProps.title} />
 
@@ -27,7 +27,7 @@ export function MovieCard({cardProps, toggleMovieInfo}: MovieCardProps) {
           </div>
 
           <div>
-            <FiClock /> {cardProps.runtime}
+            <FiClock /> {cardProps.date}
           </div>
         </div>
       </CardDetails>
