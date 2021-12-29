@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback, useMemo } from 'react'
 import dayjs from 'dayjs'
 
 import { api } from '../../services/api'
@@ -57,14 +57,14 @@ export function CardList({
     })
   }, [])
 
-  function handleShowMovieInfo(movieId: number) {
+  const handleShowMovieInfo = useCallback((movieId: number) => {
     if(movieInfoId === movieId) {
       setMovieInfoId(0)
       return
     }
 
-    setMovieInfoId(movieId)
-  }
+    setMovieInfoId(movieId)  
+  }, [movieInfoId])
 
   return (
     <Container isRelease={isRelease}>

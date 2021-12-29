@@ -1,6 +1,8 @@
+import { memo } from 'react'
+
 import { Container, Content } from './styles'
 
-export function Footer() {
+function FooterComponent() {
   return (
     <Container>
       <Content>
@@ -9,3 +11,5 @@ export function Footer() {
     </Container>
   )
 }
+
+export const Footer = memo(FooterComponent)

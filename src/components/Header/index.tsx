@@ -1,8 +1,9 @@
-import { fadeInDownHeader } from '../../animations/GlobalAnimations'
+import { memo } from 'react'
 
+import { fadeInDownHeader } from '../../animations/GlobalAnimations'
 import { Container, Content } from './styles'
 
-export function Header() {
+function HeaderComponent() {
   return (
     <Container>
       <Content
@@ -15,3 +16,5 @@ export function Header() {
     </Container>
   )
 }
+
+export const Header = memo(HeaderComponent)
