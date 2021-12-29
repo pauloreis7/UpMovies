@@ -51,7 +51,7 @@ export function CardList({
         poster: `https://image.tmdb.org/t/p/w500${result.poster_path}`,
         rating: result.vote_average,
         date: dayjs(result.release_date).format('DD/MM/YYYY'),
-      })).filter((item: CardProps, i: number) => i <= 4)
+      })).filter((_: CardProps, i: number) => i <= 4)
 
       setMovies(formattedData)
     })
@@ -81,17 +81,7 @@ export function CardList({
         }
       </Content>
 
-      {movieInfoId && <MovieInfo
-        title="Ex Title"
-        subtitle="Ex subtitle"
-        release="data ex"
-        genre="genre ex"
-        runtime="runtime ex"
-        overview="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim quos dolore quia ex. Doloribus, sunt, quos temporibus optio neque culpa numquam quas, voluptate tempore illo perspiciatis vero nam ex. Sapiente?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cumque aperiam perspiciatis molestias laudantium. Id, nihil sit modi unde reiciendis excepturi eveniet, porro aut voluptas dignissimos voluptate animi quisquam dicta."
-        banner="https://images.unsplash.com/photo-1595769816263-9b910be24d5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=879&q=80"
-        trailerUrl="https://www.youtube.com/watch?v=sY1S34973zA"
-      />}
+      {movieInfoId && <MovieInfo movieId={movieInfoId} />}
     </Container>
   )
 }

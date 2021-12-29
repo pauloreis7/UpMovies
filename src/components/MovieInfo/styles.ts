@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 import { size } from '../../styles/responsive'
 
-interface ContainerProps {
+interface ContentWrapperProps {
   bgImage: string
 }
 
@@ -21,19 +21,43 @@ export const Container = styled(motion.article)`
   }
 `
 
-export const Content = styled.div<ContainerProps>`
+export const ContentWrapper = styled.div<ContentWrapperProps>`
+  position: relative;
   width: 55%;
   min-width: 40%;
 
   padding: 3rem;
-  text-align: left;
-
-  color: var(--gray-100);
 
   background-image: url(${props => props.bgImage});
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%; 
+    height: 100%;
+
+    background: var(--dark);
+    background: linear-gradient(90deg, rgba(0,0,0,0.3) 60%, rgba(0,0,0,1) 100%);
+  }
+
+  @media (max-width: ${size.tablet}) { 
+    width: 100%;
+  }
+`
+
+export const Content = styled.div`
+  position: relative;
+  text-align: left;
+  color: var(--gray-100);
 
   h2 {
     font-weight: 700;
@@ -59,8 +83,10 @@ export const Content = styled.div<ContainerProps>`
       font-weight: 700;
     }
 
-    li:first-child strong {
-      color: var(--green-500);
+    li:first-child mark {
+      color: var(--gray-100);
+      background-color: var(--green-500);
+      font-weight: 700;
     }
 
     li + li {
@@ -73,11 +99,8 @@ export const Content = styled.div<ContainerProps>`
 
     max-width: 50rem;
   }
-
-  @media (max-width: ${size.tablet}) { 
-    width: 100%;
-  }
 `
+
 
 export const Player = styled.div`
   flex: 1;
