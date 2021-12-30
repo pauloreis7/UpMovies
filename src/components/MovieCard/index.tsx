@@ -1,3 +1,4 @@
+import React from 'react'
 import { FiStar, FiClock } from 'react-icons/fi'
 
 import { CardProps } from '../../types/CardProps'
