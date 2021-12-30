@@ -72,7 +72,8 @@
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [React](https://reactjs.org/)
-- [styled-components](https://styled-components.com/)
+- [Styled-components](https://styled-components.com/)
+- [Jest](https://jestjs.io/)
 - [Vite](https://vitejs.dev/)
 - [Axios](https://axios-http.com/)
 - [Framer motion](https://www.framer.com/motion/)
@@ -104,6 +105,9 @@ $ code .
 
 # Instalar as dependências do projeto
 yarn install
+
+# Execute os testes
+$ yarn test
 
 # Inicie a aplicação Web
 $ yarn dev
