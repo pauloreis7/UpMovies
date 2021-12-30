@@ -1,4 +1,4 @@
-import { memo } from 'react'
+import React, { memo } from 'react'
 
 import { fadeInDownHeader } from '../../animations/GlobalAnimations'
 import { Container, Content } from './styles'
