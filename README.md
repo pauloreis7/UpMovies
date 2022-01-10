@@ -16,29 +16,29 @@
     <img src=".github/cover.svg" />
 </h1>
 
-<h4 align="center">🏁 Aplicação já finalizada 🏁</h4>
+<h4 align="center">🏁 Application already finished 🏁</h4>
 
-<p align="center">🎥 Aplicação completa para listagem de filmes que estão em cartaz 🎬</p>
+<p align="center">🎥 Complete application for listing movies that are playing 🎬</p>
 
 ## 🔗 Index
 ---
- <p>👉 <a href="#about">Sobre o projecto</a> </p>
- <p>👉 <a href="#layout">Layout de aplicação</a> </p>
- <p>👉 <a href="#func">Funcionalidades</a> </p>
- <p>👉 <a href="#techs">Tecnologias</a> </p>
- <p>👉 <a href="#requests">Pré-requisitos do projeto</a> </p>
- <p>👉 <a href="#work">Download e execução</a> </p>
- <p>👉 <a href="#contribute">Contribua com o projecto</a> </p>
- <p>👉 <a href="#author">Autor</a> </p>
- <p>👉 <a href="#license">Licença</a> </p>
+ <p>👉 <a href="#about">About the project</a> </p>
+ <p>👉 <a href="#layout">Application Layout</a> </p>
+ <p>👉 <a href="#func">Features</a> </p>
+ <p>👉 <a href="#techs">Technologies</a> </p>
+ <p>👉 <a href="#requests">Project Prerequisites</a> </p>
+ <p>👉 <a href="#work">Download and execution</a> </p>
+ <p>👉 <a href="#contribute">Contribute with the project</a> </p>
+ <p>👉 <a href="#author">Author</a> </p>
+ <p>👉 <a href="#license">License</a> </p>
 
 <a id="about"></a>
-## 🔎 Sobre o projecto
+## 🔎 About the project
 ---
-<p>Aplicação completa e responsiva para listagem de filmes dos últimos meses, exibe os principais detalhes de cada filme da listagem.</p>
+<p>Complete, responsive application for listing movies from the past few months, displays the main details of each movie in the listing.</p>
 
 <a id="layout"></a>
-## 🎨 Layout de aplicação
+## 🎨 Application Layout
 ---
 <p align="center">
 
@@ -54,21 +54,21 @@
 </p>
 
 <a id="func"></a>
-## ✅ Funcionalidades
+## ✅ Features
 ---
-- [x] API REST
-- [x] Responsividade
+- [x] REST API
+- [x] Responsiveness
 - [x] HomePage
-- [x] Testes automatizados
-- [x] Listagem dos filmes lançados nos últimos seis meses
-- [x] Exibe detalhes de qualquer filme selecionado
-- [x] Integração com a API do The Movie DB
-- [x] Interface animada
+- [x] Automated tests
+- [x] Listing of movies released in the last six months
+- [x] Displays details of any selected movie
+- [x] Integration with The Movie DB API
+- [x] Animated interface
 
 <a id="techs"></a>
-## 🧪 Tecnologias
+## 🧪 Technologies
 ---
-### 💻 Projeto desenvolvido com as seguintes tecnologias
+### 💻 Project developed with the following technologies
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [React](https://reactjs.org/)
@@ -79,62 +79,61 @@
 - [Framer motion](https://www.framer.com/motion/)
 
 <a id="requests"></a>
-## 🚨 Pré-requisitos do projeto
+## 🚨 Project Prerequisites
 ---
- Antes de começar, é necessário as seguintes ferramentas instaladas na sua máquina:
+ Before you start, you will need to have the following tools installed on your machine:
 
 * [Git](https://git-scm.com)
 * [Yarn](https://yarnpkg.com/)
 
-💡 Além disso, é importante ter um editor para se trabalhar com o código, como [VSCode](https://code.visualstudio.com/)
+💡 Also, it is good to have an editor to work with the code like [VSCode](https://code.visualstudio.com/)
 
 <a id="work"></a>
-## 🏄‍♂️ Download e execução
+## 🏄‍♂️ Download and execution
 ---
 
 ````bash
 
-# Clone o repositório
+# Clone the repository
 $ git clone <https://github.com/pauloreis7/UpMovies>
 
-# Acessar a pasta do projeto pelo terminal/cmd
+# Access the project folder via terminal/cmd
 $ cd UpMovies
 
-# Abra o projeto no VSCode
+# Open the project in VSCode
 $ code .
 
-# Instalar as dependências do projeto
+# Install the project dependencies
 yarn install
 
-# Execute os testes
+# Run the tests
 $ yarn test
 
-# Inicie a aplicação Web
+# Start the Web application
 $ yarn dev
 
-# A aplicação vai iniciar na porta:3000
-acesse  <http://localhost:3000>
+# The application will start on port:3000
+go to <http://localhost:3000>
 
 ````
 
 <a id="contribute"></a>
-## 🎉 Como contribuir
+## 🎉 How Contribute
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/pauloreis7/UpMovies/pulls)
 
 ---
 
-<b>1. Faça um Fork do projeto.</b> <br />
-<b>2. Crie uma nova branch com suas mudanças: git 3. checkout -b my-feature</b> <br />
-<b>3. Salve suas alterações e crie um commit contando o que fez: git commit -m "feature: My new feature</b> <br />
-<b>4. Envie as suas alterações: git push origin my-feature</b>
-
+<b>1. Fork the project.</b> <br />
+<b>2. Create a new branch with your changes: git 3. checkout -b my-feature</b> <br />
+<b>3. Save your changes and create a commit message telling what you have done: git commit -m "feature: My new feature</b> <br />
+<b>4. Submit your changes: git push origin my-feature</b>
 
 <a id="author"></a>
-## Autor
+## Author
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Author
 
 <a href="https://github.com/pauloreis7">
 
@@ -144,13 +143,13 @@ acesse  <http://localhost:3000>
 
 </a>
 
-<p>Feito por Paulo Reis 🤴 Contacte-me 👋</p>
+<p>Made by Paulo Reis 🤴 Contact us 👋</p>
 
 <a href = "mailto:paulosilvadosreis2057@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
 <a href="https://www.linkedin.com/in/paulo-reis7/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 <a href="https://www.instagram.com/pauloreis.7" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
 
 <a id="license"></a>
-## 📝 Licença
+## 📝 License
 ---
-Este projeto está sob a licença do MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes 🏛️
+This project is under the MIT license. See the [LICENSE](LICENSE) file for more details.🏛️
